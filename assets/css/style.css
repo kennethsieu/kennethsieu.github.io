@@ -1,0 +1,202 @@
+﻿body {
+	background: url('../images/black_market_background.png') no-repeat center center fixed; 
+	background-size: cover;
+}
+
+.w {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 50px;
+	margin-left: 50px;
+	margin-top: 50px;
+	color: #B0B0B0;
+}
+
+.t {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 120px;
+	margin-left: 50px;
+	color: #D8D8D8;
+}
+
+.decoCard > img{
+	width: 220px;
+
+	transform: translateX(500px) translateY(40px) rotate(-20deg);; 
+	
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.45);
+	
+}
+
+.actionImage > img{
+	width: 190px;
+
+	transform: translateX(700px) translateY(-120px) rotate(10deg);; 
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.45);
+}
+
+.CharImage > img {
+	width: 230px;
+
+	transform: translateX(730px) translateY(-500px) rotate(10deg);; 
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.45);
+
+
+}
+
+
+#actionCard > img{
+	width: 230px;
+
+	transform: translateX(670px) translateY(-300px) rotate(10deg);
+	box-shadow: 3px 3px 3px 5px rgba(0,0,0,0.45);
+	animation-name: shadowRed;
+	animation-duration: 2s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+
+}
+
+#CharCard > img{
+	width: 300px;
+
+	transform: translateX(670px) translateY(-750px) rotate(10deg);
+	box-shadow: 3px 3px 3px 5px rgba(0,0,0,0.45);
+
+}
+
+.CharImage2 > img {
+	width: 230px;
+
+	transform: translateX(900px) translateY(-1500px) rotate(-10deg);; 
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.45);
+
+
+}
+
+
+#CharCard2 > img{
+	width: 300px;
+
+	transform: translateX(890px) translateY(-1750px) rotate(-10deg);
+	box-shadow: 3px 3px 3px 5px rgba(0,0,0,0.45);
+
+}
+
+@keyframes shadowRed {
+	from {box-shadow: 0 0 15px 5px rgba(0,0,0,0.45);}
+	to {box-shadow: 0 0 15px 5px #8B0000}
+}
+
+@keyframes shadowRedText {
+	from {color: white;}
+	to {color: #8B0000;}
+}
+
+@keyframes show {
+	0% {visibility: hidden;}
+	99% {visibility: hidden;}
+	100% {visibility: visible;}
+}
+
+@keyframes swap {
+0%  {background: url('../images/scratch.png') no-repeat center center fixed; background-size: cover;} 
+33%  {background: url('../images/outline.png') no-repeat center center fixed; background-size: cover;} 
+80% {background: url('../images/finished.png') no-repeat center center fixed; background-size: cover;}
+100% {background: url('../images/guild_background.png') no-repeat center center fixed; background-size: cover;}
+}
+
+.move {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 40px;
+	color: white;
+	transform: translateX(670px) translateY(-300px) rotate(10deg);
+	animation-name: shadowRedText;
+	animation-duration: 2s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+
+.info {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 40px;
+	color: black;
+	transform: translateX(670px) translateY(-750px) rotate(10deg);
+}
+
+.info2 {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 40px;
+	color: black;
+	transform: translateX(930px) translateY(-2040px) rotate(-10deg);
+}
+
+#actionCard:hover {
+	cursor: pointer;
+}
+
+#scene2 {
+	transform: translateX(1px) translateY(-1200px);
+	visibility: hidden;
+}
+
+.background > img{
+	width: 600px;
+	margin: 20px;
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.45);
+}
+
+
+#carousel,
+.carousel-image {
+  width: 600px;
+  height: 400px;
+}
+
+#carousel {
+  position: relative;
+  overflow: hidden;
+  transform: translateX(20px) translateY(-450px);
+}
+
+
+#carousel-image-row {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 0px;
+  transition: 0.5s left;
+}
+
+.carousel-image img {
+  height: 100%;
+  width: auto;
+}
+
+
+.hidden {
+  visibility: hidden;
+}
+
+
+#carousel-controls {
+			
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    z-index: 1;
+
+}
+
+#button-next,
+#button-previous {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
